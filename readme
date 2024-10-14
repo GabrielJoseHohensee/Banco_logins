@@ -1,0 +1,65 @@
+1. Introdução
+A interface de banco de logins é um software desenvolvido em Python que permite aos usuários armazenar, editar e gerenciar logins e senhas.
+
+2. Requisitos
+Python: Versão 3.13 ou superior
+
+Bibliotecas:
+Tkinter (para interface gráfica)
+SQLite (para banco de dados)
+Cryptography (para criptografia de senhas)
+
+3. Funcionalidades
+Cadastrar Login: Permite o cadastro de uma nova plataforma, login e senha.
+Visualizar Logins: Exibe uma lista de logins cadastrados.
+Editar Login: Permite editar as informações de um login existente.
+Excluir Login: Remove um login da lista.
+Exibir Senha: Opção para visualizar a senha armazenada de um login específico.
+
+4. Uso da Interface
+
+4.1. Cadastro de Login
+Na tela inicial, insira o nome da plataforma, login e senha nos campos correspondentes. Clique no botão "Cadastrar" para salvar as informações.
+
+4.2. Visualizar Logins
+A lista de logins cadastrados será exibida na tela principal. Cada entrada terá um botão para editar e um botão para excluir.
+
+4.3. Editar Login
+Clique no botão "Editar" ao lado do login desejado. Altere as informações conforme necessário. Clique em "Salvar" para atualizar as informações.
+
+4.4. Excluir Login
+Clique no botão "Excluir" ao lado do login desejado e confirme a exclusão.
+
+4.5. Exibir Senha
+Clique no botão "Exibir Senha" ao lado do login desejado para mostrar a senha correspondente.
+
+5. Estrutura do Código
+O código da aplicação é estruturado da seguinte forma:
+
+interface.py: Contém a lógica da interface gráfica, interagindo com o usuário e gerenciando o banco de dados. Inclui funcionalidades para adicionar, editar, excluir e visualizar senhas.
+
+logins.py: Módulo responsável pela conexão e manipulação do banco de dados SQLite. Contém funções para criar tabelas, adicionar senhas e gerenciar operações de banco de dados.
+
+style.py: Módulo que aplica estilos e temas à interface gráfica, melhorando a estética e a usabilidade da aplicação.
+
+6. Segurança
+A plataforma utiliza criptografia de senhas com a biblioteca Cryptography, garantindo que as senhas armazenadas não possam ser recuperadas diretamente. Cada senha é armazenada de forma criptografada, o que aumenta a segurança em caso de acesso não autorizado ao banco de dados.
+
+7. Instalação
+Para instalar e executar o aplicativo, siga os seguintes passos:
+
+Clone o repositório ou baixe os arquivos do projeto.
+Instale as dependências necessárias:
+bash
+Copiar código
+pip install cryptography
+Execute o arquivo principal:
+bash
+Copiar código
+python interface.py
+
+8. Contribuições
+Contribuições são bem-vindas!
+
+9. Licença
+Este projeto está licenciado sob a Licença MIT.
